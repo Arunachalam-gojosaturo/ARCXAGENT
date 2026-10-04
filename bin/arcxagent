@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# ARC X AGENT CLI Launcher
+set -euo pipefail
+SCRIPT_PATH="$(readlink -f "${BASH_SOURCE[0]}" 2>/dev/null || realpath "${BASH_SOURCE[0]}" 2>/dev/null || echo "${BASH_SOURCE[0]}")"
+REPO_ROOT="$(cd "$(dirname "$SCRIPT_PATH")/.." && pwd)"
+export ARC_X_RUNNING=1
+exec "$REPO_ROOT/scripts/run-in-hermes-env" python3 -m hermes_cli.main "$@"
