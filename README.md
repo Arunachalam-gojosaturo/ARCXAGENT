@@ -55,9 +55,23 @@
 
 ## Quick Start
 
-### 1. Automated Installation
+### ⚡ One-Line Quick Install
 
-Run the unified ARC X installer:
+Install ARC X AGENT on **Linux**, **macOS**, or **WSL2** with a single command:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Arunachalam-gojosaturo/ARCXAGENT/main/install.sh | bash
+```
+
+For **Windows (PowerShell)**:
+
+```powershell
+irm https://raw.githubusercontent.com/Arunachalam-gojosaturo/ARCXAGENT/main/install.ps1 | iex
+```
+
+---
+
+### Manual / Git Clone Install
 
 ```bash
 # Clone the repository
